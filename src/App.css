@@ -1,0 +1,172 @@
+.app {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar {
+    top: 0;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(10, 21, 61);
+    z-index: 5;
+    box-shadow: 3px 3px 3px rgba(245, 245, 245, 0.353);
+}
+.logo {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.menu a {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.desktop {
+    width: 19rem;
+}
+.userprofile {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 100%;
+}
+.userprofile h3 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s;
+}
+.menu a:hover {
+    color: goldenrod;
+    transition: 0.5s;
+    transform: scalex(1.2);
+}
+.userprofile h3:hover {
+    color: goldenrod;
+    transition: 0.5s;
+    transform: scalex(1.1);
+}
+.Allmovies {
+    margin-top: 4rem;
+}
+.menubar {
+    display: none;
+}
+@media only screen and (max-width: 1380px) {
+    .logo {
+        width: 30%;
+    }
+    .logoname {
+        font-size: 1.5rem;
+    }
+    .menu a {
+        font-size: 1rem;
+    }
+    .userprofile {
+        width: 4rem;
+    }
+    .userprofile h3{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .body {
+        width: 100%;
+    }
+    .App {
+        width: 100%;
+    }
+    .Navbar {
+        width: 100%;
+    }
+    .menubar {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .logo {
+        width: 30%;
+    }
+    .logoname {
+        font-size: 1.9rem;
+    }
+    .menu {
+        position: absolute;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        top: 5rem;
+        height: 20rem;
+        width: 70%;
+        left: 0.5rem;
+        border-radius: 10px;
+        background-color: rgb(6, 23, 61);
+    }
+    .menuclose {
+        display: none;
+    }
+    .desktop {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    
+    .logo {
+        width: 25%;
+    }
+    .logoname {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 710px) {
+    
+    .logoname {
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 622px) {
+    
+    .logoname {
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (max-width: 572px) {
+    
+    .logoname {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,314 @@
+
+.Login-Form{
+    position:absolute;
+    position: fixed;
+    margin-top: 10rem;
+    width: 100%;
+    height: 25rem;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.formcomponents{
+    width: 50%;
+    height: 100%;
+    box-shadow: 4px 4px 4px rgba(70, 67, 67, 0.824);
+    border-radius: 15px;
+    background-color: rgba(161, 215, 243, 0.835);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.frohead{
+    text-align: center;
+    color: black;
+}
+.from-continear{
+    width: 90%;
+    height: 100%;
+}
+.inputs{
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(62, 62, 62, 0.596);
+    border-radius: 5px;
+}
+.lable{
+    width: 25%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.inputs input{
+    width: 75%;
+    height: 2rem;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+}
+.btn button{
+    border: none;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 30%;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(62, 62, 62, 0.596);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.register{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register h3{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.register span{
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+}
+
+.forgot{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.forgot p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.forgot button{
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 20%;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.762);
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px rgba(62, 62, 62, 0.596);
+    cursor: pointer;
+}
+.forgot button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.btn button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.register span:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.forgot p:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.logpopuphide{
+    display: none;
+    transition: 1s;
+}
+
+/* =========================================== */
+.Singup-from{
+    position:absolute;
+    position: fixed;
+    margin-top: 7rem;
+    width: 100%;
+    height: 30rem;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.Singup-from-hide{
+    display: none;
+}
+
+.formcontanear{
+    width: 60%;
+    height: 100%;
+    box-shadow: 4px 4px 4px rgba(70, 67, 67, 0.824);
+    border-radius: 15px;
+    background-color: rgba(161, 215, 243, 0.835);
+}
+.inputss{
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(62, 62, 62, 0.596);
+    border-radius: 5px;
+}
+.singlable{
+    width: 25%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.inputss input{
+    width: 75%;
+    height: 2rem;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.sbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.sbtn button{
+    border: none;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 30%;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(62, 62, 62, 0.596);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login h3{
+    font-size: 1.5rem;
+}
+.login span{
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+}
+.sbtn button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.login span:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.cancelsing{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cancelsing button{
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 20%;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.762);
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px rgba(62, 62, 62, 0.596);
+    cursor: pointer;
+}
+.cancelsing button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .formcomponents{
+        width: 70%;
+    }
+    .lable{
+        width: 25%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: black;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .inputs input{
+        width: 75%;
+        height: 2rem;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .forgot p{
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .forgot button{
+        font-size: 1rem;
+    }
+}
