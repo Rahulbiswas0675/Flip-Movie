@@ -336,7 +336,7 @@
         padding: 16px;
     }
     .movie {
-        width: 240px;
+        width: 90%;
     }
     .footer-left{
         display: flex;
@@ -372,39 +372,4 @@
         width: 14rem;
     }
 }
-@media only screen and (max-width: 690px) {
-    .movie {
-        width: 170px;
-    }
-    .Upcoming-movie{
-        height: 13rem;
-    }
-    .Nowplay{
-        height: 8rem;
-    }
-    .play-list{
-        height: 7rem;
-    }
-    .play-item{
-        width: 12rem;
-    }
-    .play-item img{
-        width: 12rem;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .movie {
-        width: 150px;
-    }
-    .Upcoming-movie{
-        height: 11rem;
-    }
-}
-@media only screen and (max-width: 540px) {
-    .movie {
-        width: 120px;
-    }
-    .Upcoming-movie{
-        height: 8rem;
-    }
-}
+

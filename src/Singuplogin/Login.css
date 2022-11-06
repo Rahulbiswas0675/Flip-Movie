@@ -170,7 +170,7 @@
 }
 
 .formcontanear{
-    width: 60%;
+    width: 70%;
     height: 100%;
     box-shadow: 4px 4px 4px rgba(70, 67, 67, 0.824);
     border-radius: 15px;
@@ -310,5 +310,13 @@
     }
     .forgot button{
         font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 900px){
+    .formcomponents{
+        width: 90%;
+    }
+    .formcontanear{
+        width: 90%;
     }
 }
