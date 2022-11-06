@@ -12,7 +12,7 @@ function Home(props) {
   return (
     <div className="Homecomponents">
       <Searchresult movieslist={props.searchlist} classname={props.searchstyle} />
-      <Login/>
+      <Login logstates={props.logstatess}/>
       <Upcomingmovie Upcominglist={props.Upcominglist} />
       <Nowplay Playnowlist={props.Playnowlist} />
       <Letestmoviediv letestmovielist={props.letestmovie} />

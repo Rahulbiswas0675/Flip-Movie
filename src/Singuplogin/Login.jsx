@@ -3,7 +3,7 @@ import './Login.css';
 import swal from 'sweetalert';
 import { Usersdata } from '../data';
 
-function Form() {
+function Form(props) {
 
   // ================login-data============================
   const [login_email, setLogin_email] = useState();
@@ -21,13 +21,21 @@ function Form() {
   // ====================Popup-Login====================
   const localstore = localStorage.getItem("Userdata");
   useEffect(() => {
-    if (!localstore) {
+    if (!localstore && login_style !== "Login-Form" ){
       setTimeout(() => {
         setLogin_style('Login-Form');
-      }, 60000)
+      }, 180000)
     }
   }, [localstore])
 
+  useEffect(()=>{
+    if(login_style === "logpopuphide" && props.logstates !== null && singup_style === "Singup-from-hide"){
+      setLogin_style('Login-Form');
+    }else{
+      setLogin_style("logpopuphide");
+      setSingup_style_style('Singup-from-hide');
+    }
+  },[props.logstates])
   // ===============Login====================
   const Loginemailhandelar = (e) => {
     setLogin_email(e.target.value);
@@ -53,6 +61,8 @@ function Form() {
     } else {
       setPassword_error(false);
     }
+
+    
     if (login_email && !email_error && login_password && !password_error) {
       setFilteremail(Usersdata.filter((filteremail) => {
         return filteremail.email.includes(login_email)
@@ -157,9 +167,9 @@ function Form() {
     setcheckemail(Usersdata.filter((filteremail) => {
       return filteremail.email.includes(useremail)
     }))
-    if (!username_error && !user_email_error && !user_password_error && !confirm_password_error && username && useremail && userpassword && confirmpassword) {
+    if (!username_error && !user_email_error && !user_password_error && !confirm_password_error) {
 
-      if (useremail !== checkemail[0].email) {
+      if (useremail !== checkemail.email){
         userdata = {
           'name': username,
           'email': useremail,
@@ -181,8 +191,7 @@ function Form() {
             text: "This one we've seen already",
             icon: "error",
             button: "Ok!",
-          }),
-          500);
+          }),500);
       }
     } else {
       setTimeout(
